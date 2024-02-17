@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C++ Technical Documentation</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="Cpp-Documentation">C++ Documentation</header>
+      <ul id="nav-list">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+        <li>
+          <a class="nav-link" href="#Hello_World_Program"
+            >Hello World Program</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li>
+          <a class="nav-link" href="#Variables_and_Data_Types"
+            >Variables and Data Types</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        </li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li>
+          <a class="nav-link" href="#Classes_and_Objects"
+            >Classes and Objects</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+        <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          C++ is a powerful and versatile programming language widely used for
+          developing system software, application software, device drivers,
+          embedded software, and games, among other applications. It is an
+          extension of the C programming language with additional features such
+          as classes and objects, which support object-oriented programming
+          (OOP) paradigm. This technical documentation aims to provide an
+          overview of C++ syntax, features, and best practices.
+        </p>
+      </section>
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <p>
+          To write and execute C++ programs, you need a C++ compiler installed
+          on your system. Popular compilers include:
+        </p>
+        <ul id="list">
+          <li>GNU Compiler Collection (GCC)</li>
+          <li>Clang</li>
+          <li>Microsoft Visual C++ Compiler</li>
+        </ul>
+        <p>
+          You can write C++ code using any text editor and compile it using the
+          appropriate compiler.
+        </p>
+      </section>
+      <section class="main-section" id="Hello_World_Program">
+        <header>Hello World Program</header>
+        <code>
+          #include &lt;iostream&gt;<br />
+          int main() { <br />
+          std::cout &lt;&lt; "Hello,World!" &lt;&lt; std::endl; return 0;
+          <br />}
+        </code>
+      </section>
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <p>
+          Comments are essential for improving code readability and
+          understanding. They allow developers to document their code, explain
+          its functionality, and make it easier for others to maintain and
+          collaborate on the project.
+        </p>
+        <code>
+          // This is a single-line comment /*<br />
+          * This is a multi-line comment */
+        </code>
+      </section>
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>Variables and Data Types</header>
+        <code>
+          int integerVariable = 10;<br />
+          float floatVariable = 3.14;<br />
+          double doubleVariable = 2.71828;<br />
+          char charVariable = 'A'; bool boolVariable = true;
+        </code>
+      </section>
+      <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p>if...else Statement</p>
+        <code>
+          int x = 10; <br />
+          if (x > 5) { <br />
+          std::cout &lt;&lt; "x is greater than 5" &lt;&lt; std::endl;
+          <br />} <br />
+          else { std::cout &lt;&lt; "x is less than or equal to 5" &lt;&lt;
+          std::endl;
+          <br />}
+        </code>
+        <p>for Loop</p>
+        <code>
+          for (int i = 0; i &lt; 5; i++) {
+          <br />
+          std::cout &lt;&lt; "Iteration " &lt;&lt; i &lt;&lt; std::endl; <br />
+          }
+        </code>
+        <p>while Loop</p>
+        <code>
+          int count = 0; <br />
+          while (count &lt; 5) {
+          <br />
+          std::cout &lt;&lt; "Count: " &lt;&lt; count &lt;&lt; std::endl;
+          count++; <br />
+          }
+        </code>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          Functions in C++ allow developers to encapsulate blocks of code that
+          perform specific tasks. They promote code reuse, modularity, and
+          maintainability. When defining functions, it's important to choose
+          meaningful names and provide clear documentation about their
+          parameters, return values, and behavior.
+        </p>
+        <code>
+          int add(int a, int b) {
+          <br />
+          return a + b; }
+          <br />
+          <br />int main() { <br />int result = add(5, 3); <br />std::cout
+          &lt;&lt; "Result: " &lt;&lt; result &lt;&lt; std::endl; return 0; }
+        </code>
+      </section>
+      <section class="main-section" id="Classes_and_Objects">
+        <header>Classes and Objects</header>
+        <p>
+          Classes and objects are fundamental concepts in object-oriented
+          programming (OOP). A class serves as a blueprint for creating objects,
+          which are instances of that class. They encapsulate data (attributes)
+          and behavior (methods) related to a specific entity. Encapsulation,
+          inheritance, and polymorphism are key principles of OOP that promote
+          code organization, reusability, and scalability.
+        </p>
+        <code>
+          class Rectangle {
+          <br />
+          private: <br />
+          int width; int height; <br />
+          public: Rectangle(int w, int h) { width = w; height = h; } <br />
+          int area() { <br />return width * height; } };
+          <br />
+          <br />int main() { <br />
+          Rectangle rect(5, 3); <br />
+          std::cout &lt;&lt; "Area: " &lt;&lt; rect.area() &lt;&lt; std::endl;
+          return 0; }
+        </code>
+      </section>
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+        <ul id="list">
+          <li>Use meaningful variable and function names.</li>
+          <li>
+            Write clear and concise comments to explain the purpose of your
+            code.
+          </li>
+          <li>Follow consistent indentation and coding style.</li>
+          <li>Always initialize variables before using them.</li>
+          <li>Avoid using global variables whenever possible.</li>
+          <li>
+            Make use of object-oriented programming principles for better code
+            organization and reusability.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>
+          C++ is a powerful programming language suitable for a wide range of
+          applications. By understanding its syntax, features, and best
+          practices, developers can write efficient and maintainable code to
+          solve complex problems.
+        </p>
+        <p>
+          This documentation provides a foundational understanding of C++
+          programming. Explore further resources and practice to become
+          proficient in C++ development. Happy coding!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

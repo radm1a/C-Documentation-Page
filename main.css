@@ -1,0 +1,87 @@
+nav{
+    background-color:#1976D2;
+    color:#FFFFFF;
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(1, 67, 120);
+}
+#navbar ul {
+    height: 88%;
+    padding:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: #f8f9fa;
+    border-top: 1.5px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding:15px 17px;
+}
+#navbar li:hover{
+    background-color:#0E4D91;
+    
+}
+#Cpp-Documentation{
+    padding: 10px 17px;
+    font-size: 23px;
+    display: flex;
+    padding-bottom: 0;
+    font-weight: bold;
+    color:#ffcc00;
+}
+#navbar a{
+    text-decoration: none;
+    color:#EEEEEE;
+    font-size: 18px;
+}
+#navbar a:hover{
+    color: #ffcc00;
+}
+html, body {
+    min-width: 290px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+    color:#000000;
+}
+main {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+    display: block;
+}
+section header{
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 22px;
+}
+code{
+    background-color:#D5D5D5;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top:18px;
+    margin-bottom: 18px;
+}
+#list{
+    line-height: 1.8;
+}
+#Control_Structures p{
+line-height: 0;
+}
+p{
+    font-size: 17px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
